@@ -326,7 +326,7 @@ public class Main extends JavaPlugin {
 
     private static synchronized List<ResultContainer> getRecords() {
         String url = "https://www.mcbbs.net/forum.php?mod=misc&action=viewthreadmod&tid=" + tid + "&infloat=yes&handlekey=viewthreadmod&inajax=1&ajaxtarget=fwin_content_viewthreadmod";
-        return new ResultBuilder((Main) Bukkit.getPluginManager().getPlugin("BBSToper")).buildFromString(Objects.requireNonNull(HttpUtil.sendGet(url)));
+        return new ResultBuilder().buildFromString(Objects.requireNonNull(HttpUtil.sendGet(url)));
     }
 
     private static synchronized void Getter() {// 抓取网页,此方法加锁

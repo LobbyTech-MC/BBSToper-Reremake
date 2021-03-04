@@ -12,9 +12,6 @@ import org.jsoup.Jsoup;
 import org.jsoup.select.Elements;
 
 import java.io.BufferedInputStream;
-import java.io.ByteArrayInputStream;
-import java.io.Reader;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 

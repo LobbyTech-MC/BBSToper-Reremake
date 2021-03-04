@@ -1,17 +1,13 @@
 package com.mcsunnyside.BBSToper;
 
-import com.sun.javafx.geometry.BoundsUtils;
+import java.io.BufferedInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
-import sun.awt.image.BufferedImageDevice;
-
-import java.io.*;
-import java.net.URL;
-import java.net.URLConnection;
-import java.util.List;
-import java.util.Map;
 
 class HttpUtil {
     /**
